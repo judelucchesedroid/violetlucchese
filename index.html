@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Violet Lucchese Babysitting</title>
+<meta name="description" content="Violet Lucchese, a Lincoln-Sudbury senior, CPR and lifeguard certified, babysitting for families in Lincoln and nearby towns.">
+<meta property="og:title" content="Hi, I'm Violet! Babysitting in Lincoln">
+<meta property="og:description" content="Lincoln-Sudbury senior, CPR and lifeguard certified, five years babysitting. Request a sitter.">
+<meta property="og:image" content="https://www.violetlucchese.com/photos/violet.jpg">
+<meta property="og:url" content="https://www.violetlucchese.com/">
+<link rel="canonical" href="https://www.violetlucchese.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%237b3fe4'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='700' font-size='34' text-anchor='middle' fill='white'%3EV%3C/text%3E%3C/svg%3E">
+<style>body{margin:0} img{max-width:100%} [hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&family=Caveat:wght@700&display=swap">
+<style>
+/* Layout: one narrow column. Quick bio with photo and stickers, then a stack of
+   construction-paper colored blocks, one per detail, ending in the request form. */
+:root {
+  --bg: #fcf8ff;
+  --card: #ffffff;
+  --ink: #2a1d4a;
+  --muted: #5f547a;
+  --violet: #7b3fe4;
+  --on-violet: #ffffff;
+  --sun: #ffcf3a;
+  --pink: #ff6fae;
+  --sky: #3fb3ff;
+  --mint: #2fc490;
+  --sun-soft: #fff2bf;
+  --pink-soft: #ffe1ef;
+  --sky-soft: #dbf0ff;
+  --mint-soft: #d5f5e7;
+  --violet-soft: #ece2ff;
+  --line: #e6dcf5;
+  --sticker-ink: #2a1d4a;
+  --f-display: "Fredoka", "Arial Rounded MT Bold", "Trebuchet MS", system-ui, sans-serif;
+  --f-body: "Nunito", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --f-hand: "Caveat", "Bradley Hand", cursive;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #18122a; --card: #231b38; --ink: #f4efff; --muted: #b9aed6;
+    --violet: #b48cff; --on-violet: #18122a;
+    --sun-soft: #3a3016; --pink-soft: #3e1d33; --sky-soft: #142f48; --mint-soft: #143a2e; --violet-soft: #2e2250;
+    --line: #362b55;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #18122a; --card: #231b38; --ink: #f4efff; --muted: #b9aed6;
+  --violet: #b48cff; --on-violet: #18122a;
+  --sun-soft: #3a3016; --pink-soft: #3e1d33; --sky-soft: #142f48; --mint-soft: #143a2e; --violet-soft: #2e2250;
+  --line: #362b55;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 1.0625rem; line-height: 1.6; padding-inline: 20px; }
+main { max-width: 720px; margin-inline: auto; padding-block: 40px 64px; display: grid; gap: 22px; }
+h1, h2, h3 { font-family: var(--f-display); line-height: 1.1; margin: 0; text-wrap: balance; }
+h2 { font-size: clamp(1.6rem, 4.5vw, 2rem); font-weight: 700; }
+p { margin: 0; }
+a { color: var(--violet); }
+:focus-visible { outline: 3px solid var(--violet); outline-offset: 3px; border-radius: 8px; }
+.hand { font-family: var(--f-hand); font-weight: 700; font-size: 1.6rem; line-height: 1.1; }
+
+/* bio */
+.bio { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 28px; align-items: center; padding-block: 8px 12px; }
+.bio-text { display: grid; justify-items: start; gap: 18px; min-width: 0; }
+.bio .stickers { justify-content: flex-start; }
+.pic { position: relative; justify-self: center; width: min(100%, 300px); margin: 0; }
+.pic .frame { background: var(--card); padding: 12px 12px 44px; box-shadow: 0 1px 2px rgba(42,29,74,.08), 0 8px 24px rgba(42,29,74,.12); transform: rotate(2deg); border-radius: 4px; }
+.pic img { display: block; width: 100%; aspect-ratio: 426 / 640; object-fit: cover; border-radius: 2px; }
+.pic figcaption { position: absolute; left: 0; right: 0; bottom: 10px; text-align: center; color: var(--muted); font-size: 1.35rem; }
+.pic .tape { position: absolute; width: 96px; height: 28px; background: var(--sun); opacity: .6; top: -12px; left: 50%; transform: translateX(-50%) rotate(-3deg); }
+.bio h1 { font-size: clamp(2.6rem, 9vw, 3.8rem); font-weight: 700; }
+.bio h1 span { color: var(--violet); position: relative; white-space: nowrap; }
+.bio h1 span::after { content: ""; position: absolute; left: 4%; right: 4%; bottom: -6px; height: 10px; background: var(--pink); border-radius: 99px; opacity: .55; z-index: -1; }
+.bio h1 { position: relative; z-index: 0; }
+.bio .lede { font-size: 1.2rem; max-width: 34ch; color: var(--ink); }
+.stickers { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 0; margin: 0; list-style: none; }
+.stickers li { font: 600 .98rem/1 var(--f-display); padding: 10px 14px; border-radius: 999px; color: var(--sticker-ink); transition: transform .15s ease; }
+.stickers li:nth-child(1) { background: var(--sun); transform: rotate(-3deg); }
+.stickers li:nth-child(2) { background: var(--pink); transform: rotate(2deg); }
+.stickers li:nth-child(3) { background: var(--sky); transform: rotate(-2deg); }
+.stickers li:nth-child(4) { background: var(--mint); transform: rotate(3deg); }
+.stickers li:hover { transform: rotate(0) scale(1.06); }
+.btn { display: inline-flex; align-items: center; justify-content: center; font: 700 1.05rem/1 var(--f-display); padding: 15px 24px; border-radius: 999px; border: 0; background: var(--violet); color: var(--on-violet); text-decoration: none; cursor: pointer; box-shadow: 0 4px 0 rgba(42,29,74,.22); transition: transform .12s ease, box-shadow .12s ease; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 6px 0 rgba(42,29,74,.22); }
+.btn:active { transform: translateY(2px); box-shadow: 0 1px 0 rgba(42,29,74,.22); }
+.btn.small { padding: 11px 18px; font-size: .98rem; }
+.btn.ghost { background: var(--card); color: var(--violet); box-shadow: inset 0 0 0 2px var(--violet); }
+
+/* detail blocks */
+.block { border-radius: 26px; padding: clamp(22px, 5vw, 32px); display: grid; gap: 14px; }
+.block.sun { background: var(--sun-soft); }
+.block.pink { background: var(--pink-soft); }
+.block.sky { background: var(--sky-soft); }
+.block.mint { background: var(--mint-soft); }
+.block.violet { background: var(--violet-soft); }
+.block.form { background: var(--card); box-shadow: inset 0 0 0 3px var(--violet); }
+.block .muted { color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
+.chips li { background: var(--card); padding: 8px 14px; border-radius: 999px; font-weight: 700; font-size: .95rem; }
+.list { display: grid; gap: 12px; padding: 0; margin: 0; list-style: none; }
+.list li { display: grid; grid-template-columns: 14px minmax(0, 1fr); gap: 12px; align-items: start; }
+.list li::before { content: ""; width: 14px; height: 14px; border-radius: 50%; margin-top: 6px; background: var(--dot, var(--violet)); }
+.list b { font-family: var(--f-display); font-weight: 600; }
+.sky .list li { --dot: var(--sky); }
+.pink .list li { --dot: var(--pink); }
+blockquote { margin: 0; font: 600 clamp(1.2rem, 3.4vw, 1.45rem)/1.4 var(--f-display); }
+cite { font-style: normal; font-weight: 700; color: var(--muted); }
+
+.crafts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 4px 0 0; }
+.crafts figure { margin: 0; background: var(--card); padding: 8px 8px 6px; border-radius: 14px; display: grid; gap: 4px; }
+.crafts figure:nth-child(odd) { transform: rotate(-1.5deg); }
+.crafts figure:nth-child(even) { transform: rotate(1.5deg); }
+.crafts img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 9px; }
+.crafts figcaption { font-family: var(--f-hand); font-weight: 700; font-size: 1.3rem; text-align: center; line-height: 1.2; }
+
+/* form */
+.addr { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.addr code { font: 700 1rem/1.3 var(--f-body); background: var(--violet-soft); padding: 8px 12px; border-radius: 10px; user-select: all; word-break: break-all; }
+form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.field { display: grid; gap: 6px; min-width: 0; }
+.field.full, fieldset, .err, .form-actions, .ready { grid-column: 1 / -1; }
+label, legend { font-weight: 700; font-size: .95rem; }
+label small, legend small { font-weight: 400; color: var(--muted); }
+input, textarea { font: 400 1rem/1.4 var(--f-body); color: var(--ink); background: var(--bg); border: 2px solid var(--line); border-radius: 12px; padding: 11px 12px; width: 100%; }
+input:focus, textarea:focus { outline: none; border-color: var(--violet); }
+textarea { min-height: 100px; resize: vertical; }
+fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 8px; }
+.pick { display: flex; flex-wrap: wrap; gap: 8px; }
+.pick label input { position: absolute; opacity: 0; pointer-events: none; width: 1px; }
+.pick label span { display: inline-block; padding: 8px 14px; border-radius: 999px; border: 2px solid var(--line); cursor: pointer; font-weight: 600; font-size: .95rem; }
+.pick label input:checked + span { background: var(--violet); border-color: var(--violet); color: var(--on-violet); }
+.pick label input:focus-visible + span { outline: 3px solid var(--violet); outline-offset: 2px; }
+.err { color: #c0263a; font-weight: 700; font-size: .95rem; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .err { color: #ff8fa0; } }
+:root[data-theme="dark"] .err { color: #ff8fa0; }
+.ready { display: grid; gap: 12px; padding: 18px; border-radius: 18px; background: var(--mint-soft); }
+.ready pre { margin: 0; white-space: pre-wrap; word-break: break-word; font: 400 .95rem/1.5 var(--f-body); background: var(--card); border-radius: 12px; padding: 14px; max-height: 300px; overflow: auto; }
+.row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.status { font-size: .95rem; font-weight: 700; }
+
+footer { text-align: center; color: var(--muted); font-size: .9rem; padding-block: 0 40px; }
+
+@media (max-width: 560px) {
+  form { grid-template-columns: minmax(0, 1fr); }
+}
+/* phones: the framed photo becomes a faded backdrop behind the bio */
+@media (max-width: 640px) {
+  .bio { grid-template-columns: minmax(0, 1fr); position: relative; isolation: isolate; overflow: hidden; margin-inline: -20px; padding: 64px 20px 36px; text-align: center; }
+  .bio::before { content: ""; position: absolute; inset: 0; z-index: -2; background: url("photos/violet.jpg") center 22% / cover no-repeat; opacity: .32; }
+  .bio::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(to bottom, color-mix(in srgb, var(--bg) 25%, transparent) 0%, color-mix(in srgb, var(--bg) 55%, transparent) 55%, var(--bg) 100%); }
+  .bio-text { justify-items: center; }
+  .bio .stickers { justify-content: center; }
+  .pic { display: none; }
+}
+@media (max-width: 420px) { .bio { margin-inline: -16px; padding-inline: 16px; } }
+@media (max-width: 420px) { body { padding-inline: 16px; } .crafts { gap: 10px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+</style>
+
+</head>
+<body>
+<main>
+  <header class="bio">
+    <div class="bio-text">
+      <h1>Hi, I’m <span>Violet!</span></h1>
+      <p class="lede">I’m a senior at Lincoln-Sudbury and I’ve been babysitting for families for the past five years.</p>
+      <ul class="stickers" aria-label="Quick facts">
+        <li>5 years babysitting</li>
+        <li>CPR &amp; lifeguard certified</li>
+        <li>I drive to activities</li>
+        <li>Pets welcome</li>
+      </ul>
+      <a class="btn" href="#contact">Request a sitter</a>
+    </div>
+    <figure class="pic">
+      <div class="frame">
+        <img src="photos/violet.jpg" alt="Violet Lucchese, senior photo, smiling outdoors in front of tall grass" width="426" height="640">
+        <figcaption class="hand">just updated with my senior photo!</figcaption>
+      </div>
+      <div class="tape" aria-hidden="true"></div>
+    </figure>
+  </header>
+
+  <section class="block sun">
+    <h2>What we’ll do</h2>
+    <p>I love keeping kids busy and having fun. I’ve cared for kids of all ages, multiple kids at once, and neurodivergent kids.</p>
+    <ul class="chips">
+      <li>Playing outside</li><li>Sports &amp; games</li><li>Nature walks</li><li>Arts &amp; crafts</li><li>Reading stories</li><li>Imaginative play</li><li>Homework help</li><li>Simple meals</li><li>Rides to activities</li>
+    </ul>
+  </section>
+
+  <section class="block pink">
+    <h2>Good to know</h2>
+    <ul class="list">
+      <li><span><b>No phone while I’m babysitting.</b> I’m responsible, dependable, and fully present with your kids.</span></li>
+      <li><span><b>Your house rules.</b> I respect each family’s culture and rules, especially around screen time, schedules, and routines.</span></li>
+      <li><span><b>Lifeguard at Codman Pool</b> for the past two summers, and CPR certified.</span></li>
+      <li><span><b>Animal lover.</b> I have a dog, a cat and a bunny, so furry family members are always welcome!</span></li>
+    </ul>
+    <p>Once I really get to know each child, it feels less like babysitting and more like a fun friendship.</p>
+  </section>
+
+  <section class="block sky">
+    <h2>Need more than one sitter?</h2>
+    <p>I have a small network of trusted local friends who babysit. We cover for one another, so even if I’m booked, I can often connect you with someone I know and trust. We team up for bigger needs too:</p>
+    <ul class="list">
+      <li><span><b>Birthday parties.</b> We plan, organize, and run super-fun parties with games, crafts, and activities.</span></li>
+      <li><span><b>Parties &amp; gatherings.</b> Enjoy your friends while we keep the kids busy, fed, and entertained.</span></li>
+      <li><span><b>School closures &amp; long days.</b> Teacher workdays, school holidays, or longer stretches. Between us, we can often make a schedule work.</span></li>
+    </ul>
+  </section>
+
+  <section class="block violet" aria-label="What parents say">
+    <blockquote>“Violet is one of those babysitters you feel completely comfortable leaving your kids with. She’s responsible and dependable, but just as importantly, she genuinely engages with them. My kids are always excited when they hear Violet is coming!”</blockquote>
+    <cite>Aly Murray, mom of Luca, age 3</cite>
+  </section>
+
+  <section class="block mint">
+    <h2>Rainy-day crafts</h2>
+    <p>When it’s too cold (or rainy!) to be outside, we bring the fun indoors. It’s the best when the kids are proud of what we made!</p>
+    <div class="crafts">
+      <figure><img src="photos/c1.jpg" alt="Snowman ornaments made from tea lights, with felt hats and ribbon scarves" loading="lazy"><figcaption>tea-light snowmen</figcaption></figure>
+      <figure><img src="photos/c2.jpg" alt="A pinecone owl with cotton fluff, a felt face and googly eyes" loading="lazy"><figcaption>pinecone owl</figcaption></figure>
+      <figure><img src="photos/c3.jpg" alt="Paper cards with hot cocoa mugs topped with pom-pom marshmallows" loading="lazy"><figcaption>hot cocoa cards</figcaption></figure>
+      <figure><img src="photos/c4.jpg" alt="Winter cards including a paper-plate owl and a polka-dot ice skate reading Skate away" loading="lazy"><figcaption>“skate away” cards</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="block form" id="contact">
+    <h2>Request a sitter</h2>
+    <p class="muted">Fill this in and the page turns it into an email for you to send me.</p>
+    <div class="addr">
+      <code id="addr">violetlucchese@icloud.com</code>
+      <button class="btn small ghost" type="button" id="copyAddr">Copy email</button>
+      <span class="status" id="addrStatus" role="status" aria-live="polite"></span>
+    </div>
+
+    <form id="req" novalidate>
+      <div class="field"><label for="f-name">Parent/Guardian name</label><input id="f-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="field"><label for="f-phone">Cell phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+      <div class="field"><label for="f-town">Town</label><input id="f-town" name="town" autocomplete="address-level2" placeholder="Lincoln, Sudbury, Concord…"></div>
+      <div class="field full"><label for="f-kids">Number of children &amp; ages</label><input id="f-kids" name="kids" placeholder="2 kids, ages 4 and 7"></div>
+      <div class="field"><label for="f-dates">Date(s) needed</label><input id="f-dates" name="dates" placeholder="Fri Nov 6, or every Tuesday"></div>
+      <div class="field"><label for="f-hours">Expected hours</label><input id="f-hours" name="hours" placeholder="3–8 pm"></div>
+      <fieldset>
+        <legend>What kind of help? <small>Pick any</small></legend>
+        <div class="pick">
+          <label><input type="checkbox" id="t-sit" name="type" value="Babysitting"><span>Babysitting</span></label>
+          <label><input type="checkbox" id="t-weekly" name="type" value="Regular weekly help"><span>Regular weekly help</span></label>
+          <label><input type="checkbox" id="t-drive" name="type" value="Driving to activities"><span>Driving to activities</span></label>
+          <label><input type="checkbox" id="t-party" name="type" value="Party or event help"><span>Party or event help</span></label>
+          <label><input type="checkbox" id="t-other" name="type" value="Other"><span>Other</span></label>
+        </div>
+      </fieldset>
+      <div class="field full"><label for="f-notes">Anything you’d like me to know? <small>Anything that helps me understand your family’s needs</small></label><textarea id="f-notes" name="notes"></textarea></div>
+      <p class="err" id="err" role="alert" hidden></p>
+      <div class="form-actions"><button class="btn" type="submit">Write my request</button></div>
+
+      <div class="ready" id="ready" hidden>
+        <h3>Your request is ready to send</h3>
+        <p>Copy it and email it to <strong>violetlucchese@icloud.com</strong>. It hasn’t been sent yet.</p>
+        <pre id="msg"></pre>
+        <div class="row">
+          <button class="btn small" type="button" id="copyMsg">Copy message</button>
+          <a class="btn small ghost" id="mailto" href="#">Open in my email app</a>
+          <span class="status" id="msgStatus" role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <p class="hand" style="text-align:center;color:var(--violet)">I look forward to getting to know your family!</p>
+</main>
+
+<footer>Violet Lucchese · Babysitting · Lincoln, MA</footer>
+
+<script>
+(function () {
+  const TO = "violetlucchese@icloud.com";
+  const $ = (id) => document.getElementById(id);
+
+  async function copy(text, statusEl, fallbackEl) {
+    try {
+      await navigator.clipboard.writeText(text);
+      statusEl.textContent = "Copied!";
+    } catch (e) {
+      const r = document.createRange();
+      r.selectNodeContents(fallbackEl);
+      const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+      statusEl.textContent = "Selected. Press Cmd+C (or Ctrl+C) to copy";
+    }
+    setTimeout(() => { statusEl.textContent = ""; }, 4000);
+  }
+
+  $("copyAddr").addEventListener("click", () => copy(TO, $("addrStatus"), $("addr")));
+
+  $("req").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const f = e.target;
+    const v = (n) => (f.elements[n].value || "").trim();
+    const name = v("name"), email = v("email");
+    const err = $("err");
+    if (!name || !/^\S+@\S+\.\S+$/.test(email)) {
+      err.textContent = !name ? "Add your name so Violet knows who’s asking." : "Add an email address Violet can reply to.";
+      err.hidden = false;
+      (!name ? $("f-name") : $("f-email")).focus();
+      return;
+    }
+    err.hidden = true;
+    const types = [...f.querySelectorAll('input[name="type"]:checked')].map((i) => i.value);
+    const rows = [
+      ["Parent/Guardian", name],
+      ["Email", email],
+      ["Cell phone", v("phone")],
+      ["Town", v("town")],
+      ["Children & ages", v("kids")],
+      ["Date(s) needed", v("dates")],
+      ["Expected hours", v("hours")],
+      ["Type of help", types.join(", ")],
+    ].filter((r) => r[1]);
+    const notes = v("notes");
+    const body = "Hi Violet,\n\nI found your babysitting page and would love some help.\n\n" +
+      rows.map((r) => r[0] + ": " + r[1]).join("\n") +
+      (notes ? "\n\nAnything else:\n" + notes : "") +
+      "\n\nThanks,\n" + name;
+    const subject = "Babysitting request from " + name;
+    $("msg").textContent = "To: " + TO + "\nSubject: " + subject + "\n\n" + body;
+    $("mailto").href = "mailto:" + TO + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    $("copyMsg").onclick = () => copy(body, $("msgStatus"), $("msg"));
+    $("ready").hidden = false;
+    $("ready").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "nearest" });
+  });
+})();
+</script>
+
+</body>
+</html>
