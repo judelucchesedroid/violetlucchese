@@ -60,7 +60,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 1.0625rem; line-height: 1.6; padding-inline: 20px; }
-main { max-width: 800px; margin-inline: auto; padding-block: 24px 64px; display: grid; gap: 22px; }
+main { max-width: 800px; margin-inline: auto; padding-block: 0 12px; display: grid; gap: 22px; }
 h1, h2, h3 { font-family: var(--f-display); line-height: 1.1; margin: 0; text-wrap: balance; }
 h2 { font-size: clamp(1.6rem, 4.5vw, 2rem); font-weight: 700; }
 p { margin: 0; }
@@ -69,13 +69,13 @@ a { color: var(--violet); }
 .hand { font-family: var(--f-hand); font-weight: 700; font-size: 1.6rem; line-height: 1.1; }
 
 /* bio */
-.bio { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr); gap: 32px; align-items: center; padding-block: 8px 12px; }
+.bio { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr); gap: 32px; align-items: center; padding-block: 16px 12px; }
 .bio-text { display: grid; justify-items: start; gap: 14px; min-width: 0; }
 .bio .stickers { justify-content: flex-start; }
 .pic { position: relative; justify-self: center; width: min(100%, 250px); margin: 0; }
-.pic .frame { background: var(--card); padding: 12px 12px 44px; box-shadow: 0 1px 2px rgba(42,29,74,.08), 0 8px 24px rgba(42,29,74,.12); transform: rotate(2deg); border-radius: 4px; }
+.pic .frame { background: var(--card); padding: 12px 12px 10px; box-shadow: 0 1px 2px rgba(42,29,74,.08), 0 8px 24px rgba(42,29,74,.12); transform: rotate(2deg); border-radius: 4px; }
 .pic img { display: block; width: 100%; height: auto; aspect-ratio: 426 / 640; object-fit: cover; border-radius: 2px; }
-.pic figcaption { position: absolute; left: 0; right: 0; bottom: 10px; text-align: center; color: var(--muted); font-size: 1.35rem; }
+.pic figcaption { margin-top: 8px; text-align: center; color: var(--muted); font-size: 1.25rem; line-height: 1.15; }
 .pic .tape { position: absolute; width: 96px; height: 28px; background: var(--sun); opacity: .6; top: -12px; left: 50%; transform: translateX(-50%) rotate(-3deg); }
 .bio h1 { font-size: clamp(2.6rem, 9vw, 3.8rem); font-weight: 700; }
 .bio h1 span { color: var(--violet); position: relative; white-space: nowrap; }
@@ -161,14 +161,14 @@ fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 8px; }
 .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 .status { font-size: .95rem; font-weight: 700; }
 
-footer { text-align: center; color: var(--muted); font-size: .9rem; padding-block: 0 40px; }
+footer { text-align: center; color: var(--muted); font-size: .9rem; padding-block: 0 14px; }
 
 @media (max-width: 560px) {
   form { grid-template-columns: minmax(0, 1fr); }
 }
 /* phones: the framed photo becomes a faded backdrop behind the bio */
 @media (max-width: 640px) {
-  .bio { grid-template-columns: minmax(0, 1fr); position: relative; isolation: isolate; overflow: hidden; margin-inline: -20px; padding: 36px 20px 20px; text-align: center; }
+  .bio { grid-template-columns: minmax(0, 1fr); position: relative; isolation: isolate; overflow: hidden; margin-inline: -20px; padding: 28px 20px 20px; text-align: center; }
   .bio-text { gap: 12px; }
   .bio .lede { font-size: 1.08rem; }
   .bio .brand { justify-items: center; }
