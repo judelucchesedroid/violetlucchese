@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Violet Care</title>
-<meta name="description" content="Violet Lucchese, a Lincoln-Sudbury senior, CPR and lifeguard certified, babysitting for families in Lincoln and nearby towns.">
+<meta name="description" content="Violet Care: babysitting and birthday parties in Lincoln, Sudbury, Concord and Wayland by Violet Lucchese and her network of trusted local sitters.">
 <meta property="og:title" content="Violet Care">
-<meta property="og:description" content="Babysitting in Lincoln by Violet Lucchese: Lincoln-Sudbury senior, CPR and lifeguard certified, five years with local families.">
+<meta property="og:description" content="Babysitting and birthday parties in Lincoln, Sudbury, Concord and Wayland. Patient, kind, creative and fun, with a network of trusted local sitters.">
 <meta property="og:image" content="https://www.violetlucchese.com/photos/violet.jpg">
 <meta property="og:url" content="https://www.violetlucchese.com/">
 <link rel="canonical" href="https://www.violetlucchese.com/">
@@ -29,7 +29,6 @@
   --pink: #ff6fae;
   --sky: #3fb3ff;
   --mint: #2fc490;
-  --lilac: #b996ff;
   --sun-soft: #fff2bf;
   --pink-soft: #ffe1ef;
   --sky-soft: #dbf0ff;
@@ -75,32 +74,29 @@ a { color: var(--violet); }
 .bio .stickers { justify-content: flex-start; }
 .pic { position: relative; justify-self: center; width: min(100%, 300px); margin: 0; }
 .pic .frame { background: var(--card); padding: 12px 12px 44px; box-shadow: 0 1px 2px rgba(42,29,74,.08), 0 8px 24px rgba(42,29,74,.12); transform: rotate(2deg); border-radius: 4px; }
-.pic .crop { overflow: hidden; border-radius: 2px; aspect-ratio: 426 / 640; }
-/* she stands ~8% left of center in the original; zoom a touch and shift right */
-.pic img { display: block; width: 100%; height: 100%; object-fit: cover; transform: translate(9%, 2%) scale(1.18); }
+.pic img { display: block; width: 100%; aspect-ratio: 426 / 640; object-fit: cover; border-radius: 2px; }
 .pic figcaption { position: absolute; left: 0; right: 0; bottom: 10px; text-align: center; color: var(--muted); font-size: 1.35rem; }
 .pic .tape { position: absolute; width: 96px; height: 28px; background: var(--sun); opacity: .6; top: -12px; left: 50%; transform: translateX(-50%) rotate(-3deg); }
 .bio h1 { font-size: clamp(2.6rem, 9vw, 3.8rem); font-weight: 700; }
 .bio h1 span { color: var(--violet); position: relative; white-space: nowrap; }
 .bio h1 span::after { content: ""; position: absolute; left: 4%; right: 4%; bottom: -6px; height: 10px; background: var(--pink); border-radius: 99px; opacity: .55; z-index: -1; }
 .bio h1 { position: relative; z-index: 0; }
+.bio .kicker { font: 700 .9rem/1.2 var(--f-display); letter-spacing: .08em; text-transform: uppercase; color: var(--violet); }
+.bio .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+@media (max-width: 640px) { .bio .actions { justify-content: center; } }
 .bio .lede { font-size: 1.2rem; max-width: 34ch; color: var(--ink); }
 .stickers { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 0; margin: 0; list-style: none; }
 .stickers li { font: 600 .98rem/1 var(--f-display); padding: 10px 14px; border-radius: 999px; color: var(--sticker-ink); transition: transform .15s ease; }
-.stickers li:nth-child(5n+1) { background: var(--sun); transform: rotate(-3deg); }
-.stickers li:nth-child(5n+2) { background: var(--pink); transform: rotate(2deg); }
-.stickers li:nth-child(5n+3) { background: var(--sky); transform: rotate(-2deg); }
-.stickers li:nth-child(5n+4) { background: var(--mint); transform: rotate(3deg); }
-.stickers li:nth-child(5n) { background: var(--lilac); transform: rotate(-1.5deg); }
-.stickers li:nth-child(even):nth-child(n+6) { transform: rotate(-2.5deg); }
-.stickers li:nth-child(odd):nth-child(n+6) { transform: rotate(2.5deg); }
+.stickers li:nth-child(1) { background: var(--sun); transform: rotate(-3deg); }
+.stickers li:nth-child(2) { background: var(--pink); transform: rotate(2deg); }
+.stickers li:nth-child(3) { background: var(--sky); transform: rotate(-2deg); }
+.stickers li:nth-child(4) { background: var(--mint); transform: rotate(3deg); }
+.stickers li:nth-child(5) { background: var(--sun); transform: rotate(-1.5deg); }
 .stickers li:hover { transform: rotate(0) scale(1.06); }
 .btn { display: inline-flex; align-items: center; justify-content: center; font: 700 1.05rem/1 var(--f-display); padding: 15px 24px; border-radius: 999px; border: 0; background: var(--violet); color: var(--on-violet); text-decoration: none; cursor: pointer; box-shadow: 0 4px 0 rgba(42,29,74,.22); transition: transform .12s ease, box-shadow .12s ease; }
 .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 0 rgba(42,29,74,.22); }
 .btn:active { transform: translateY(2px); box-shadow: 0 1px 0 rgba(42,29,74,.22); }
 .btn.small { padding: 11px 18px; font-size: .98rem; }
-.btn.big { padding: 22px 40px; font-size: 1.45rem; margin-top: 6px; }
-@media (max-width: 640px) { .btn.big { width: 100%; max-width: 360px; } }
 .btn.ghost { background: var(--card); color: var(--violet); box-shadow: inset 0 0 0 2px var(--violet); }
 
 /* detail blocks */
@@ -163,7 +159,7 @@ footer { text-align: center; color: var(--muted); font-size: .9rem; padding-bloc
 /* phones: the framed photo becomes a faded backdrop behind the bio */
 @media (max-width: 640px) {
   .bio { grid-template-columns: minmax(0, 1fr); position: relative; isolation: isolate; overflow: hidden; margin-inline: -20px; padding: 64px 20px 36px; text-align: center; }
-  .bio::before { content: ""; position: absolute; inset: 0; z-index: -2; background: url("photos/violet.jpg") center 22% / cover no-repeat; opacity: .32; transform: translateX(9%) scale(1.18); }
+  .bio::before { content: ""; position: absolute; inset: 0; z-index: -2; background: url("photos/violet.jpg") center 22% / cover no-repeat; opacity: .32; }
   .bio::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(to bottom, color-mix(in srgb, var(--bg) 25%, transparent) 0%, color-mix(in srgb, var(--bg) 55%, transparent) 55%, var(--bg) 100%); }
   .bio-text { justify-items: center; }
   .bio .stickers { justify-content: center; }
@@ -179,30 +175,40 @@ footer { text-align: center; color: var(--muted); font-size: .9rem; padding-bloc
 <main>
   <header class="bio">
     <div class="bio-text">
+      <p class="kicker">Violet Care · Babysitting &amp; birthday parties</p>
       <h1>Hi, I’m <span>Violet!</span></h1>
-      <p class="lede">I’m a senior at Lincoln-Sudbury and I’ve been babysitting for families for the past five years.</p>
+      <p class="lede">I’m a senior at Lincoln-Sudbury and I’ve been babysitting for families for the past five years. I’m patient, kind, creative, and fun, and I work in the towns of Lincoln, Sudbury, Concord, and Wayland.</p>
       <ul class="stickers" aria-label="Quick facts">
         <li>5 years babysitting</li>
         <li>CPR &amp; lifeguard certified</li>
         <li>I drive to activities</li>
         <li>Pets welcome</li>
-        <li>Patient</li>
-        <li>Kind</li>
-        <li>Creative</li>
-        <li>Gentle</li>
-        <li>Fun</li>
         <li>Referrals available</li>
       </ul>
-      <a class="btn big" href="#contact">Request a sitter</a>
+      <div class="actions">
+        <a class="btn" href="#contact">Request a sitter</a>
+        <a class="btn ghost" href="#parties">Plan a birthday party</a>
+      </div>
     </div>
     <figure class="pic">
       <div class="frame">
-        <div class="crop"><img src="photos/violet.jpg" alt="Violet Lucchese, senior photo, smiling outdoors in front of tall grass" width="426" height="640"></div>
+        <img src="photos/violet.jpg" alt="Violet Lucchese, senior photo, smiling outdoors in front of tall grass" width="426" height="640">
         <figcaption class="hand">just updated with my senior photo!</figcaption>
       </div>
       <div class="tape" aria-hidden="true"></div>
     </figure>
   </header>
+
+  <section class="block sky" id="parties">
+    <h2>More than one sitter: a whole team</h2>
+    <p>Violet Care isn’t just me. I have a small network of trusted local friends who babysit. We stay in touch about availability, cover for one another, and work together when a family needs more than one sitter. So even if I’m booked, I can often connect you with someone I know and trust.</p>
+    <ul class="list">
+      <li><span><b>Birthday parties.</b> We plan, organize, and run creative, super-fun parties with games, crafts, and activities.</span></li>
+      <li><span><b>Parties &amp; gatherings.</b> Enjoy time with your friends while we keep the kids busy, fed, and entertained.</span></li>
+      <li><span><b>School closures &amp; long days.</b> Teacher workdays, school holidays, or longer stretches. Between us, we can often make a schedule work.</span></li>
+    </ul>
+    <a class="btn" href="#contact" style="justify-self:start">Book a party or the team</a>
+  </section>
 
   <section class="block sun">
     <h2>What we’ll do</h2>
@@ -221,16 +227,6 @@ footer { text-align: center; color: var(--muted); font-size: .9rem; padding-bloc
       <li><span><b>Animal lover.</b> I have a dog, a cat and a bunny, so furry family members are always welcome!</span></li>
     </ul>
     <p>Once I really get to know each child, it feels less like babysitting and more like a fun friendship.</p>
-  </section>
-
-  <section class="block sky">
-    <h2>Need more than one sitter?</h2>
-    <p>I have a small network of trusted local friends who babysit. We cover for one another, so even if I’m booked, I can often connect you with someone I know and trust. We team up for bigger needs too:</p>
-    <ul class="list">
-      <li><span><b>Birthday parties.</b> We plan, organize, and run super-fun parties with games, crafts, and activities.</span></li>
-      <li><span><b>Parties &amp; gatherings.</b> Enjoy your friends while we keep the kids busy, fed, and entertained.</span></li>
-      <li><span><b>School closures &amp; long days.</b> Teacher workdays, school holidays, or longer stretches. Between us, we can often make a schedule work.</span></li>
-    </ul>
   </section>
 
   <section class="block violet" aria-label="What parents say">
@@ -262,7 +258,7 @@ footer { text-align: center; color: var(--muted); font-size: .9rem; padding-bloc
       <div class="field"><label for="f-name">Parent/Guardian name</label><input id="f-name" name="name" autocomplete="name" required></div>
       <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
       <div class="field"><label for="f-phone">Cell phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
-      <div class="field"><label for="f-town">Town</label><input id="f-town" name="town" autocomplete="address-level2" placeholder="Lincoln, Sudbury, Concord…"></div>
+      <div class="field"><label for="f-town">Town</label><input id="f-town" name="town" autocomplete="address-level2" placeholder="Lincoln, Sudbury, Concord, Wayland"></div>
       <div class="field full"><label for="f-kids">Number of children &amp; ages</label><input id="f-kids" name="kids" placeholder="2 kids, ages 4 and 7"></div>
       <div class="field"><label for="f-dates">Date(s) needed</label><input id="f-dates" name="dates" placeholder="Fri Nov 6, or every Tuesday"></div>
       <div class="field"><label for="f-hours">Expected hours</label><input id="f-hours" name="hours" placeholder="3–8 pm"></div>
@@ -296,7 +292,7 @@ footer { text-align: center; color: var(--muted); font-size: .9rem; padding-bloc
   <p class="hand" style="text-align:center;color:var(--violet)">I look forward to getting to know your family!</p>
 </main>
 
-<footer>Violet Lucchese · Babysitting · Lincoln, MA</footer>
+<footer>Violet Care · Babysitting &amp; birthday parties · Lincoln, Sudbury, Concord &amp; Wayland</footer>
 
 <script>
 (function () {
